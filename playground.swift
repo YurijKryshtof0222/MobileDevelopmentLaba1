@@ -13,7 +13,11 @@ func multiply(number1: Int?, number2: Int?) -> Int {
 }
 
 func divide(number1: Int?, number2: Int?) -> Int {
-    return number1! / number2!
+    if number2! != 0 {
+        return number1! / number2!
+    }
+    print("Error: cannot divide by zero!")
+    return 0
 }
 
 
